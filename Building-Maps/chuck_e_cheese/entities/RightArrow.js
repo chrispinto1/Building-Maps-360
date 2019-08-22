@@ -102,7 +102,37 @@ export default class RightArrow extends React.Component{
       case "circle_train.jpg":
         Environment.setBackgroundImage(asset('wheel_of_fortune.jpg'));
         this.setState({
-          currentPhoto: 'wheel_of_fortune.jpg'
+          currentPhoto: 'wheel_of_fortune.jpg',
+          translateX: 10,
+          translateY: -6,
+          translateZ: 0,
+          rotateX: -110,
+          rotateY: 90,
+          rotateZ: 90,
+        },() => this.props.updateImage(this.state.currentPhoto,15,0,3,0,-90,90))
+      break;
+      case "ducky_splash.jpg":
+        Environment.setBackgroundImage(asset('wheel_of_fortune.jpg'));
+        this.setState({
+          currentPhoto: 'wheel_of_fortune.jpg',
+          translateX: 10,
+          translateY: -6,
+          translateZ: 0,
+          rotateX: -110,
+          rotateY: 90,
+          rotateZ: 90,
+        },() => this.props.updateImage(this.state.currentPhoto,15,0,3,0,-90,90))
+      break;
+      case "wheel_of_fortune.jpg":
+        Environment.setBackgroundImage(asset('circle_train.jpg'));
+        this.setState({
+          currentPhoto: 'circle_train.jpg',
+          translateX: 10,
+          translateY: 10,
+          translateZ: 0,
+          rotateX: 130,
+          rotateY: 90,
+          rotateZ: 90,
         },() => this.props.updateImage(this.state.currentPhoto,15,0,3,0,-90,90))
       break;
     }
@@ -203,6 +233,30 @@ export default class RightArrow extends React.Component{
           translateY: 10,
           translateZ: 0,
           rotateX: 130,
+          rotateY: 90,
+          rotateZ: 90,
+        }
+      }
+    else if(props.currentPhoto ==="ducky_splash.jpg"){
+        return{
+          currentPhoto: props.currentPhoto,
+          setPhoto: props.setCurrentPhoto,
+          translateX: 3,
+          translateY: -2,
+          translateZ: -2,
+          rotateX: -60,
+          rotateY: 90,
+          rotateZ: 90,
+        }
+      }
+    else if(props.currentPhoto ==="wheel_of_fortune.jpg"){
+        return{
+          currentPhoto: props.currentPhoto,
+          setPhoto: props.setCurrentPhoto,
+          translateX: 10,
+          translateY: -6,
+          translateZ: 0,
+          rotateX: -110,
           rotateY: 90,
           rotateZ: 90,
         }

@@ -76,7 +76,7 @@ class EntranceArrow extends React.Component{
           translateY: -.5,
           translateZ: -20,
           rotateX: 180
-        },() => this.props.updateImage(this.state.currentPhoto,6,-3,1,300,0,90))
+        },() => this.props.updateImage(this.state.currentPhoto,4,0,0,270,-25,90))
       break;
       case "ice_machines.jpg":
         Environment.setBackgroundImage(asset('kiosk.jpg'));
@@ -88,19 +88,19 @@ class EntranceArrow extends React.Component{
           rotateX: 180,
           rotateY: 0,
           rotateZ: 0,
-        },() => this.props.updateImage(this.state.currentPhoto,6,-3,1,300,0,90))
+        },() => this.props.updateImage(this.state.currentPhoto,4,0,0,270,-25,90))
       break;
       case "nba.jpg":
         Environment.setBackgroundImage(asset('alley_rollers.jpg'));
         this.setState({
           currentPhoto: "alley_rollers.jpg",
-          translateX: 0,
-          translateY: 0,
+          translateX: 5,
+          translateY: 8,
           translateZ: 0,
           rotateX: 90,
           rotateY: 0,
           rotateZ: 0,
-        },() => this.props.updateImage(this.state.currentPhoto,1,-3,2,90,0,-90))
+        },() => this.props.updateImage(this.state.currentPhoto,0,1,2,0,90,90))
       break;
       case "wonder_land.jpg":
         Environment.setBackgroundImage(asset('wonder_wheel.jpg'));
@@ -143,12 +143,12 @@ class EntranceArrow extends React.Component{
         this.setState({
           currentPhoto: "back_seating.jpg",
           translateX: 2,
-          translateY: -3,
+          translateY: -10,
           translateZ: 0,
-          rotateX: -30,
+          rotateX: -50,
           rotateY: 90,
           rotateZ: 90,
-        },() => this.props.updateImage(this.state.currentPhoto,0,0,0,0,0,0))
+        },() => this.props.updateImage(this.state.currentPhoto,4,-6,6,0,130,90))
         break;
       case "back_seating.jpg":
         Environment.setBackgroundImage(asset('seating.jpg'));
@@ -208,7 +208,7 @@ class EntranceArrow extends React.Component{
           rotateX: -80,
           rotateY: 90,
           rotateZ: 90,
-        },() => this.props.updateImage(this.state.currentPhoto,4,-6,6,0,130,90))
+        },() => this.props.updateImage(this.state.currentPhoto,10,6,1,0,-50,90))
         break;
       case "ducky_splash.jpg":
         Environment.setBackgroundImage(asset('circle_train.jpg'));
@@ -258,9 +258,9 @@ class EntranceArrow extends React.Component{
           currentPhoto: props.currentPhoto,
           setPhoto: props.setCurrentPhoto,
           translateX: 0,
-          translateY: 0,
-          translateZ: 20,
-          rotateX: 0,
+          translateY: -.5,
+          translateZ: -20,
+          rotateX: 180,
           rotateY: 0,
           rotateZ: 0,
         }
@@ -353,8 +353,8 @@ class EntranceArrow extends React.Component{
         return{
           currentPhoto: props.currentPhoto,
           setPhoto: props.setCurrentPhoto,
-          translateX: 3,
-          translateY: 0,
+          translateX: 2,
+          translateY: -3,
           translateZ: 0,
           rotateX: -30,
           rotateY: 90,

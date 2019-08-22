@@ -8,7 +8,7 @@ import RightArrow from './RightArrow'
 import MiddleArrow from './MiddleArrow'
 let renderPhotos = ["outside.jpg","entrance.jpg","entrance2.jpg","registers.jpg","kiosk.jpg","alley_rollers.jpg","nba.jpg","wonder_land.jpg","ice_machines.jpg","wonder_wheel.jpg","back_seating.jpg","wheel_of_fortune.jpg","stage.jpg","ducky_splash.jpg"]
 let renderPhotosLeftArrow = ["entrance.jpg","entrance2.jpg","registers.jpg","kiosk.jpg","alley_rollers.jpg","nba.jpg","ice_machines.jpg","wonder_land.jpg","wonder_wheel.jpg","seating.jpg","back_seating.jpg","wheel_of_fortune.jpg","tech_room.jpg","bathroom.jpg","stage.jpg","ducky_splash.jpg","circle_train.jpg","harpoon_lagoon.jpg"]
-let renderPhotosRightArrow= ["kiosk.jpg","alley_rollers.jpg","wonder_land.jpg","ice_machines.jpg","seating.jpg","back_seating.jpg","tech_room.jpg","ducky_splash.jpg","circle_train.jpg"]
+let renderPhotosRightArrow= ["kiosk.jpg","alley_rollers.jpg","wonder_land.jpg","ice_machines.jpg","seating.jpg","back_seating.jpg","tech_room.jpg","ducky_splash.jpg","circle_train.jpg","wheel_of_fortune.jpg"]
 let renderPhotosMiddleArrow = ["back_seating.jpg","circle_train.jpg"]
 
 class LeftArrow extends React.Component{
